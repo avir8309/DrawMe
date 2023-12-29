@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.home__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home__container > * {
+  margin-bottom: 10px;
+}
+.home__header {
+  margin-bottom: 30px;
+}
+.username__input {
+  padding: 10px;
+  width: 50%;
+}
+.home__cta {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #607eaa;
+  color: #f9f5eb;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.chat {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.chat__sidebar {
+  height: 100%;
+  background-color: #f9f5eb;
+  flex: 0.05;
+  padding: 20px;
+  border-right: 1px solid #fdfdfd;
+}
+.chat__main {
+  height: 100%;
+  flex: 0.8;
+}
+.chat__header {
+  margin: 30px 0 20px 0;
+}
+.chat__users > * {
+  margin-bottom: 10px;
+  color: #607eaa;
+  font-size: 14px;
+}
+.online__users > * {
+  margin-bottom: 10px;
+  color: rgb(238, 102, 102);
+  font-style: italic;
+}
+.chat__mainHeader {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9f5eb;
+}
+.leaveChat__btn {
+  padding: 10px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-color: #d1512d;
+  cursor: pointer;
+  color: #eae3d2;
+}
+.message__container {
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.message__container > * {
+  margin-bottom: 10px;
+}
+.chat__footer {
+  padding: 10px;
+  background-color: #f9f5eb;
+  height: 10vh;
+}
+.form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 15px;
+}
+.sendBtn {
+  width: 150px;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #eae3d2;
+  cursor: pointer;
+}
+.sendBtn:hover {
+  background-color: rgb(129, 201, 129);
+}
+.message__recipient {
+  background-color: #f5ccc2;
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.message__sender {
+  background-color: rgb(194, 243, 194);
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 15px;
+}
+.message__chats > p {
+  font-size: 13px;
+}
+.sender__name {
+  text-align: right;
+}
+.message__status {
+  position: fixed;
+  bottom: 50px;
+  font-size: 13px;
+  font-style: italic;
+}
+/* styles.css */
+
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom right, #ffcc00, #ff6666, #6699ff); /* Change colors as desired */
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.inputbox {
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.input-field {
+  padding: 20px 25px; /* Increased padding for larger input fields */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  width: 350px; /* Increased width for larger input fields */
+  font-size: 18px;
+}
+.submit-button {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #4e9cff, #4ac2ff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  margin-left: 20px;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #4ac2ff, #4e9cff);
+}
+.heading {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', cursive; /* Change to a cursive font */
+  font-size: 36px;
+  padding-bottom: 30px;
+  color: white; /* Text color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  margin-bottom: auto; /* Pushes the heading to the top */
+}
+.heading:hover {
+  color: #7f50ff;
+  text-shadow: 0 0 10px #ff7f50, 0 0 20px #ff7f50, 0 0 30px #ff7f50;
+}
+.top{
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  
+  padding: 20px;
+  margin: auto;
+
+}
+.main-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.main-page-div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between items */
+  padding: 20px;
+  max-width: 70%; /* Adjust the width */
+}
+
+.chat-page {
+  flex: 1;
+  padding: 20px;
+  background-color: white; /* Hides the background color for chat page */
+  margin-left: -20px; /* Remove the gap by adjusting the margin */
+}
+.circle{
+  padding: 12px 24px;
+  background: linear-gradient(to right, #4e9cff, #4ac2ff);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+  margin-left: 300px;
+  margin-right: 400px;
+
+}
+.chatdrawme{
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 20px;
+  border-radius: 8px;
+ 
+  
+  margin: 0;
+  font-size: 20px;
+ 
+  font-family: cursive, sans-serif;
+
+}
+@media only screen and (max-width: 768px) {
+  .form-container {
+    /* Adjust styles for smaller devices */
+    width: 90%;
+    padding: 10px;
+  }
+
+  .input-field {
+    /* Adjust input field styles for smaller devices */
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .submit-button {
+    /* Adjust submit button styles for smaller devices */
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .heading {
+    /* Adjust heading styles for smaller devices */
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  .main-page {
+    /* Adjust main page layout for smaller devices */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-page-div1 {
+    /* Adjust styles for main page content on smaller devices */
+    max-width: 90%;
+  }
+
+  .chat-page {
+    /* Adjust chat page styles for smaller devices */
+    margin-left: 0;
+  }
+
+  .circle {
+    /* Adjust circle styles for smaller devices */
+    margin: 10px auto;
+    font-size: 10px;
+  }
+
+  .chatdrawme {
+    /* Adjust chat drawme styles for smaller devices */
+    font-size: 16px;
+  }
+
+  /* Add more adjustments as needed for small devices */
+}
