@@ -5,7 +5,7 @@ import socketIO from 'socket.io-client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 
-const socket = socketIO.connect('http://localhost:4000');
+const socket = socketIO.connect('draw-me-frontend.vercel.app');
 
 function App() {
   const [brushColor, setBrushColor] = useState('#000000'); // State to hold brush color
